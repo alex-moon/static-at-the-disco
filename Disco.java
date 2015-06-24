@@ -15,14 +15,14 @@ class Disco {
       System.exit(1);
     }
 
-    // 1. Race Condition
-    if (args[0].equals("race")) {
-      for (int i=0; i < 1000; i++) { race(); }
+    // 1. Circular Evaluation
+    if (args[0].equals("circle")) {
+      System.out.println(Saturday.disco);
     }
 
-    // 2. Circular Evaluation
-    if (args[0].equals("circle")) {
-      System.out.println(Saturday.disco());
+    // 2. Race Condition
+    if (args[0].equals("race")) {
+      for (int i=0; i < 1000; i++) { race(); }
     }
   }
 
